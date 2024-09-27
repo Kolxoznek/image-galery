@@ -5,53 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image galery</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
+    <header class="header">
+            <div class="container">
             <div class="logo">
-                <img src="" alt="" class="logo__img">
+                <img src="img/logo.png" alt="" class="logo__img">
                 <h1 class="logo__text">Unsplash API</h1>
             </div>
-            <nav class="search">
-                <input type="text" class="search__input">
-            </nav>
+            <form class="search">
+                <input type="text" name="str" class="search__input" autocomplete="off" autofocus placeholder="winter" required>
+                <button type="submit" class="search__btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="30px" height="30px" fill-rule="nonzero"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M13,3c-5.511,0 -10,4.489 -10,10c0,5.511 4.489,10 10,10c2.39651,0 4.59738,-0.85101 6.32227,-2.26367l5.9707,5.9707c0.25082,0.26124 0.62327,0.36648 0.97371,0.27512c0.35044,-0.09136 0.62411,-0.36503 0.71547,-0.71547c0.09136,-0.35044 -0.01388,-0.72289 -0.27512,-0.97371l-5.9707,-5.9707c1.41266,-1.72488 2.26367,-3.92576 2.26367,-6.32227c0,-5.511 -4.489,-10 -10,-10zM13,5c4.43012,0 8,3.56988 8,8c0,4.43012 -3.56988,8 -8,8c-4.43012,0 -8,-3.56988 -8,-8c0,-4.43012 3.56988,-8 8,-8z"></path></g></g></svg>
+                </button>
+                <button type="reset" class="search__btn search__reset hide">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="30px" height="30px" fill-rule="nonzero"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M7,4c-0.25587,0 -0.51203,0.09747 -0.70703,0.29297l-2,2c-0.391,0.391 -0.391,1.02406 0,1.41406l7.29297,7.29297l-7.29297,7.29297c-0.391,0.391 -0.391,1.02406 0,1.41406l2,2c0.391,0.391 1.02406,0.391 1.41406,0l7.29297,-7.29297l7.29297,7.29297c0.39,0.391 1.02406,0.391 1.41406,0l2,-2c0.391,-0.391 0.391,-1.02406 0,-1.41406l-7.29297,-7.29297l7.29297,-7.29297c0.391,-0.39 0.391,-1.02406 0,-1.41406l-2,-2c-0.391,-0.391 -1.02406,-0.391 -1.41406,0l-7.29297,7.29297l-7.29297,-7.29297c-0.1955,-0.1955 -0.45116,-0.29297 -0.70703,-0.29297z"></path></g></g></svg>
+                </button>
+            </form>
+            </div>
         </header>
         <main class="main">
-            <section class="grid">
-                <article class="image-container">
-                    <img src="" alt="">
-                </article>
-                <article class="image-container">
-                    <img src="" alt="">
-                </article>
-                <article class="image-container">
-                    <img src="" alt="">
-                </article>
-                <article class="image-container">
-                    <img src="" alt="">
-                </article>
-                <article class="image-container">
-                    <img src="" alt="">
-                </article>
-                <article class="image-container">
-                    <img src="" alt="">
-                </article>
-                <article class="image-container">
-                    <img src="" alt="">
-                </article>
-                <article class="image-container">
-                    <img src="" alt="">
-                </article>
-                <article class="image-container">
-                    <img src="" alt="">
-                </article>
-            </section>
+            <div class="container">
+                <section class="grid">
+                </section>
+            </div>
         </main>
         <footer class="footer">
-
+            <div class="container">
+                <a class="footer__author" href="https://github.com/Kolxoznek" target="_blank">EvgeniyX</a>
+                <h4 class="footer__date">2024</h4>
+                <a class="footer__link" href="https://rs.school/courses/javascript-preschool-ru"  target="_blank">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_5701_38384)">
+                        <circle cx="32" cy="32" r="32" fill="black"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13 21.5095V42.5L19.3067 42.4621V33.9474C20.0567 33.9474 20.7616 33.9775 21.4049 34.4267C21.8946 34.8785 22.2838 35.4335 22.546 36.054L25.9202 42.4621H33C31.5957 39.6675 30.4706 36.1327 28.0552 34.0104C27.5455 33.6749 26.9919 33.4158 26.411 33.241C27.1873 33.0779 27.9357 32.7973 28.6319 32.4084C30.3855 31.3375 31.3915 29.3808 31.3436 27.3374C31.3798 26.1328 31.0495 24.9466 30.3988 23.9441C28.9256 21.6883 25.9337 21.4213 23.4663 21.5095H13ZM21.9939 30.0116H19.3313V25.6975H22.1043C23.4807 25.5594 25.1814 26.1754 25.0859 27.8041C25.1499 29.5621 23.3647 29.9127 21.9939 30.0116Z" fill="#FFB749"/>
+                        <path d="M39.4768 35.089L33 35.4666C33.1262 37.3671 34.0021 39.16 35.4636 40.5088C36.9117 41.8323 39.5076 42.4941 43.2515 42.4941C46.3564 42.5823 49.9058 41.8146 51.821 39.1569C52.5929 38.0934 53.0033 36.8427 52.9998 35.564C53.0217 33.1848 51.4339 31.2297 49.3044 30.3147C47.2632 29.4766 45.1198 28.8674 42.9204 28.5C42.1107 28.41 41.3327 28.1563 40.6423 27.757C39.9039 27.2597 40.078 26.2272 40.735 25.7596C42.6084 24.5207 45.6299 25.5545 45.8608 27.9032L52.2845 27.5621C52.1703 25.768 51.1844 24.0545 49.6356 22.9583C47.6987 21.8887 45.4532 21.3874 43.1986 21.5212C41.3493 21.4527 39.5037 21.7218 37.7682 22.3128C35.6082 23.1125 33.829 25.064 33.8344 27.4525C33.7931 28.9377 34.5158 30.4088 35.755 31.3621C37.6454 32.6238 39.8325 33.4582 42.139 33.798C43.3833 33.9637 44.5727 34.3795 45.6224 35.0159C46.5878 35.7309 46.5807 37.167 45.5959 37.8903C44.5078 38.6532 42.9034 38.7416 41.6818 38.2468C40.3717 37.716 39.6048 36.4784 39.4768 35.089Z" fill="#FFB749"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_5701_38384">
+                        <rect width="64" height="64" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
         </footer>
-    </div>
     <script src="script.js"></script>
 </body>
 </html>
